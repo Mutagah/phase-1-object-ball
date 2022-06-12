@@ -153,11 +153,14 @@ function teamNames(){
     for (const gameKey in game){
         debugger
             const teamHomeAway = game[gameKey]
-            for(let item in teamHomeAway){
-                //let myArray = [];
-                debugger
-                console.log(teamHomeAway[item].teamName)
-                //console.log(myArray)
+            debugger
+            for(const item in teamHomeAway){
+                const nameofTeam = teamHomeAway.teamName
+                let myArray = [];
+                myArray.push(nameofTeam)
+                console.log(myArray)
+                
+
             }
         }
                        }
