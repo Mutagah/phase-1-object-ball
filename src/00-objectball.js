@@ -181,8 +181,22 @@ function playNumbers(nameOfTeam){
                 }
             }
         }
+function playerStat(playerName){
+    const game = gameObject()
+    for (const gameKey in game){
+            const teamHomeAway = game[gameKey]
+                const playerObj = teamHomeAway.players
+                for(const playerDetails in playerObj ){
+                                if (playerDetails === playerName){
+                                    console.log(playerObj[playerDetails])
+                                }
+                        }
+                 
+            }
+        }
 console.log(numPointScored("DeSagna Diop"));
 console.log(shoeSize("Reggie Evans"));
 console.log(teamColors("Brooklyn Nets"))
 teamNames()
 console.log(playNumbers("Charlotte Hornets"))
+playerStat("Alan Anderson")
